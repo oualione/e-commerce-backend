@@ -18,6 +18,7 @@ const userRoutes = require('./routes/userRoutes')
 const categoryRoutes = require('./routes/categoryRoutes')
 const productRoutes = require('./routes/productRoutes')
 const braintreeRoutes = require('./routes/braintreeRoutes')
+const orderRoutes = require('./routes/orderRoutes')
 //Database Configuration
 mongoose.connect(process.env.DATABASE).then(() => {
     console.log('Connected to Database Successfully ..')
@@ -31,6 +32,7 @@ app.use('/api', userRoutes)
 app.use('/api', productRoutes)
 app.use('/api', categoryRoutes)
 app.use('/api', braintreeRoutes)
+app.use('/api', orderRoutes)
 
 
 const port = process.env.PORT || 7001
