@@ -33,7 +33,7 @@ const handler = (req, res) => {
 }
 
 module.exports = allowCors(handler)
-app.use(cors();
+//app.use(cors());
 
 require('dotenv').config()
 //Routes Declaration
