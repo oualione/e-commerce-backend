@@ -9,7 +9,14 @@ const app = express()
 app.use(express.json())
 app.use(expressValidator())
 app.use(cookieParser())
-app.use(cors())
+//app.use(cors())
+app.use(cors(
+    {
+        origin: [''],
+        methods : ['GET', 'POST'],
+        credentials : true,
+    }
+));
 
 require('dotenv').config()
 //Routes Declaration
