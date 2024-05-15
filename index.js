@@ -9,7 +9,7 @@ const app = express()
 app.use(express.json())
 app.use(expressValidator())
 app.use(cookieParser())
-app.use(cors())
+//app.use(cors())
 app.use(cors(
     {
         origin: ['mern-react-puce.vercel.app'],
