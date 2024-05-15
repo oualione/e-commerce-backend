@@ -12,7 +12,7 @@ app.use(cookieParser())
 //app.use(cors())
 app.use(cors(
     {
-        origin: [''],
+        origin: ['https://e-commerce-backend-tan-ten.vercel.app'],
         methods : ['GET', 'POST'],
         credentials : true,
     }
