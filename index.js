@@ -10,7 +10,13 @@ app.use(express.json())
 app.use(expressValidator())
 app.use(cookieParser())
 //app.use(cors())
-app.use(cors());
+app.use(cors(
+    {
+        origin : ['https://mern-react-puce.vercel.app/login'],
+        methods : ['POST', 'GET'],
+        credentials : true
+    }
+));
 
 require('dotenv').config()
 //Routes Declaration
