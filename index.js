@@ -31,11 +31,11 @@ const categoryRoutes = require('./routes/categoryRoutes')
 const productRoutes = require('./routes/productRoutes')
 const braintreeRoutes = require('./routes/braintreeRoutes')
 //Database Configuration
-mongoose.connect('mongodb+srv://oualione:Ouali-1995@cluster0.tzggodf.mongodb.net/ecommerce?retryWrites=true&w=majority&appName=Cluster0').then(() => {
-    console.log('Connected to Database Successfully ..')
-}).catch((error) => {
-    console.log('Coonection failed ..' + error.message)
-})
+// mongoose.connect('mongodb+srv://oualione:Ouali-1995@cluster0.tzggodf.mongodb.net/ecommerce?retryWrites=true&w=majority&appName=Cluster0').then(() => {
+//     console.log('Connected to Database Successfully ..')
+// }).catch((error) => {
+//     console.log('Coonection failed ..' + error.message)
+// })
         
 
 app.use('/api', authRoutes)
