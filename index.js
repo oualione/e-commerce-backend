@@ -11,7 +11,7 @@ app.use(expressValidator())
 app.use(cookieParser())
 //app.use(cors())
 app.use(cors({
-  origin: 'https://mern-react-puce.vercel.app', // Replace with your frontend URL
+  origin: 'https://mern-react-20d8.onrender.com', // Replace with your frontend URL
   credentials: true, // Enable cookies for authorized requests (if needed)
 }));
 app.get('/api/data', (req, res) => {
