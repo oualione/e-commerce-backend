@@ -14,6 +14,12 @@ app.use(cors({
   origin: 'https://mern-react-puce.vercel.app', // Replace with your frontend URL
   credentials: true, // Enable cookies for authorized requests (if needed)
 }));
+app.get('/api/data', (req, res) => {
+    res.setHeader('Access-Control-Allow-Origin', 'https://mern-react-puce.vercel.app');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+    // ... send your API response
+  });
 
 //app.use(cors());
 
