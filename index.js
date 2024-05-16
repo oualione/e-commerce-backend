@@ -26,7 +26,7 @@ const categoryRoutes = require('./routes/categoryRoutes')
 const productRoutes = require('./routes/productRoutes')
 const braintreeRoutes = require('./routes/braintreeRoutes')
 
-mongoose.connect('mongodb+srv://oualione:Ouali-1995@cluster0.tzggodf.mongodb.net/ecommerce?retryWrites=true&w=majority&appName=Cluster0').then(() => {
+mongoose.connect(process.env.DATABASE).then(() => {
     console.log('Connected to Database Successfully ..')
 }).catch((error) => {
     console.log('Coonection failed ..' + error.message)
