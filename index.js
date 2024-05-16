@@ -9,7 +9,11 @@ const app = express()
 app.use(express.json())
 app.use(expressValidator())
 app.use(cookieParser())
-app.use(cors())
+//app.use(cors())
+app.use(cors({
+  origin: 'your-frontend-app-url', // Replace with your frontend URL
+  credentials: true, // Enable cookies for authorized requests (if needed)
+}));
 
 //app.use(cors());
 
